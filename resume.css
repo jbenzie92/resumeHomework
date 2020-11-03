@@ -1,5 +1,43 @@
-.myHeadshot {
-    style:"width:100px;height:100px;"
-
-
+#linkedIn{
+   text-align:center;
 }
+#headshot{
+    height: 100px;
+    width: 100px;
+}
+
+.header {
+
+    text-align: center;
+}
+
+.bold {
+
+   font-weight: bold;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f6e9;
+  }
+  /*--- navigation bar ---*/
+  .navbar {
+    background:#000000;
+  }
+  .nav-link,
+  .navbar-brand {
+    color: #fff;
+    cursor: pointer;
+  }
+  .nav-link {
+    margin-right: 1em !important;
+  }
+  .nav-link:hover {
+    color: rgb(255, 255, 255);
+  }
+  .navbar-collapse {
+    justify-content: flex-end;
+  }
+ h2{
+   text-align: center;
+ }

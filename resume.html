@@ -1,54 +1,109 @@
 <!DOCTYPE html>
 <html>
-<head>
-<style> </style>
-    <title>HTML Resume Mockup</title>
 
+<head>
+
+  <title>HTML Resume Mockup</title>
+  <link href="resume.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="bootstrap2/dist/css/bootstrap.min.css">
 </head>
 
 <body>
-<h1 style="text-align:center;">John B. Williams</h1>
-<p style="text-align:center;"><a href="https://www.linkedin.com/in/john-b-williams-92a77164/"> LinkedIn</a></p>
-<img src="/Users/johnwilliams/desktop/jpegs/Headshot.jpeg" alt = "Headshot" >
 
-<h2><ins>Job Experience</ins></h2>
+  <!-- alt nav
 
-<p><b>Huntsource                                                         </b>
-<hr>    
-<ul>
-    <li>Provided full life cycle service to fortune 100 clients as well as SMBs local to Charlotte, DMV, and Atlanta markets with a focus in Information Security, Cloud Technology, and Data Intelligence.</li>
-    <li>Continuously networked with candidates utilizing LinkedIn, local MeetUps, and cold calling to investigate their current situations and determine how we could be of service.</li>
-    <li>Built report with candidates and clients alike to effectively fill open positions while meeting the needs of all interested parties. </li>
-    <li>Created and maintained a database of 150+ qualified candidates to foster relationships while maintaining a finger on the pulse of our local market.</li>
-</ul>
-</p>
-<p><b>Wells Fargo</b>
-<hr>    
-<ul>  
-    <li>Partnered with Wells Fargo hiring managers to find, screen, and hire qualified risk and compliance professionals. </li>
-    <li>Was responsible for full lifecycle recruiting for the Compliance/Risk operations line of business.</li>
-    <li>Hired candidates for all levels of positions from Data Analysis to C-Suite level support. </li>
-    <li>Created, consulted on, and negotiated compensation packages that satisfy the needs of all parties.</li>
-</ul>    
-</p>
+        <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="pics/Headshot.jpeg" width="75" height="75" class="d-inline-block align-top" alt="headshot">
+          John B. Williams
+        </a>
 
-<p><b>Signature Consultants</b>
-<hr>    
-<ul>
-    <li>Oversaw the full life cycle of recruitment from strategic sourcing, qualifying, interviewing, negotiating offers, closing qualified candidates, and on-boarding of new employees to comply with best practices and current laws.</li>
-    <li>Personally met and screened candidates to understand key motivators and present opportunities matching their requirements.</li>
-    <li>Led daily stand-up meetings to update recruiting activities from the previous day, establishing a sense of urgency, and allocating a proper recruiting focus.</li>
-    <li>Was responsible for training and development of Associate Recruiters; from coaching of recruiting best practices, to mentoring and guiding daily activities that lead to success.</li>
+      </nav>-->
+  <!--First Nav -->
+  <div class="container">
+    <nav class="navbar navbar-expand-md">
+      <a class="navbar-brand">John B. Williams</a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#dropdownList">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="dropdownList">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="resume.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/john-b-williams-92a77164/">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="container"><img id="headshot" src="pics/Headshot.jpeg" alt="Headshot"></div>
 
-</ul>
-</p>
+  </div>
 
-<h3>Education</h3>
-<hr>
-<p><i>The University of North Carolina at Greensboro</i></p>
-<p><i>BS in Business Administration Concentration in Economics, May 2015</i></p>
 
+  <h2><ins>Job Experience</ins></h2>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Huntsource</h3>
+        <ul>
+          <li>Provided full life cycle service to fortune 100 clients as well as SMBs local to Charlotte, DMV, and
+            Atlanta markets with a focus in Information Security, Cloud Technology, and Data Intelligence.</li>
+          <li>Continuously networked with candidates utilizing LinkedIn, local MeetUps, and cold calling to investigate
+            their current situations and determine how we could be of service.</li>
+          <li>Built report with candidates and clients alike to effectively fill open positions while meeting the needs
+            of all interested parties. </li>
+          <li>Created and maintained a database of 150+ qualified candidates to foster relationships while maintaining a
+            finger on the pulse of our local market.</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h3>Wells Fargo</h3>
+        <ul>
+          <li>Partnered with Wells Fargo hiring managers to find, screen, and hire qualified risk and compliance
+            professionals. </li>
+          <li>Was responsible for full lifecycle recruiting for the Compliance/Risk operations line of business.</li>
+          <li>Hired candidates for all levels of positions from Data Analysis to C-Suite level support. </li>
+          <li>Created, consulted on, and negotiated compensation packages that satisfy the needs of all parties.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+
+  </p>
+  <h3>Education</h3>
+  <hr>
+  <p><i>The University of North Carolina at Greensboro</i></p>
+  <p><i>BS in Business Administration Concentration in Economics, May 2015</i></p>
+
+  <nav class="navbar navbar-expand-md">
+    <a class="navbar-brand" href="#">John B. Williams</a>
+    <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <script>src = "https://code.jquery.com/jquery-3.5.1.min.js"</script>
+  <script>src = "bootstrap2/dist/js/bootstrap.min.js" </script>
 </body>
-
 
 </html>
